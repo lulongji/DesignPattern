@@ -140,4 +140,12 @@ public class TestTemp {
     }
 
 
+    public static void main(String[] args) {
+        Integer aa = 100;
+        Integer bb = 100;
+        System.out.println(aa == bb);
+        Integer cc = 200;
+        Integer dd = 200;
+        System.out.println(cc == dd);
+    }
 }
