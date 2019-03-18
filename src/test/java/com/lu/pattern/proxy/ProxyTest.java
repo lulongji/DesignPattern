@@ -35,4 +35,12 @@ public class ProxyTest {
 
     }
 
+    @Test
+    public void CglibProxyTest() {
+        BuyCar buyCar = new BuyCarImpl();
+        CglibProxy cglibProxy = new CglibProxy();
+        BuyCarImpl BuyCarImplCglibProxy = (BuyCarImpl) cglibProxy.getInstance(buyCar);
+        BuyCarImplCglibProxy.buyPorsche();
+    }
+
 }
